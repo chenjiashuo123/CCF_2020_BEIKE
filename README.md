@@ -1,4 +1,4 @@
-# CCF BDCI 2020 房产行业聊天问答匹配个人方案
+# CCF BDCI 2020 房产行业聊天问答匹配个人方案 A榜47
 
 ## 赛题描述详见：https://www.datafountain.cn/competitions/474
 
@@ -63,7 +63,7 @@
 
 对于单模，我采用五折交叉验证，对每一个单模的五个模型结果，我尝试了相加融合和投票的方式，结果是融合相加的线上f1较高
 
-对于不同模型，我也只是采用的相加融合的方式（由于时间问题没有尝试投票和stacking的方式）。最后a榜效果最好的是**bert-wwm + 对抗训练 + 伪标签、roberta-large + reinit+对抗训练 + 伪标签、roberta-large last2embedding_cls + reinit + 对抗训练 + 伪标签** 三个模型的融合，线上F1有 **0.7908** ， 排名49， 该模型在B榜F1为0.799，排名79；B榜我尝试只对两个效果最好的模型进行融合，即 **bert-wwm + 对抗训练 + 伪标签**和 **last2embedding_cls + reinit + 对抗训练 + 伪标签**,最终F1为0.80，排名72。
+对于不同模型，我也只是采用的相加融合的方式（由于时间问题没有尝试投票和stacking的方式）。最后a榜效果最好的是**bert-wwm + 对抗训练 + 伪标签、roberta-large + reinit+对抗训练 + 伪标签、roberta-large last2embedding_cls + reinit + 对抗训练 + 伪标签** 三个模型的融合，线上F1有 **0.7908** ， 排名47；B榜我尝试只对两个效果最好的模型进行融合，即 **bert-wwm + 对抗训练 + 伪标签**和 **last2embedding_cls + reinit + 对抗训练 + 伪标签**,最终F1为0.80，排名72。
 
 ### 总结
 
