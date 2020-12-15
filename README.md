@@ -1,4 +1,4 @@
-# CCF BDCI 2020 房产行业聊天问答匹配个人方案 A榜47
+# CCF BDCI 2020 房产行业聊天问答匹配 A榜47/2985
 
 ## 赛题描述详见：https://www.datafountain.cn/competitions/474
 
